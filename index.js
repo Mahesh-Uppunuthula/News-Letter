@@ -69,6 +69,6 @@ app.post("/failure", (request, response) =>{
     response.redirect("/");
 })
 
-app.listen(process.env || 3000, (res) => {
+app.listen(process.env.PORT || 3000, (res) => {
     console.log("Server up and running on 3000 port");
 })
